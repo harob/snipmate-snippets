@@ -1,3 +1,7 @@
+snippet todo
+	; TODO(harry) 
+snippet note
+	; NOTE(harry) 
 snippet comm
 	(comment
 	  ${1}
@@ -8,15 +12,15 @@ snippet condp
 snippet def
 	(def ${1})
 snippet defm
-	(defmethod ${1:multifn} "${2:doc-string}" ${3:dispatch-val} [${4:args}]
+	(defmethod ${1:multifn} ${2:dispatch-val} [${4:args}]
 	  ${5})
 snippet defmm
-	(defmulti ${1:name} "${2:doc-string}" ${3:dispatch-fn})
+	(defmulti ${1:name} ${2:dispatch-fn})
 snippet defma
-	(defmacro ${1:name} "${2:doc-string}" ${3:dispatch-fn})
+	(defmacro ${1:name} ${2:dispatch-fn})
 snippet defn
-	(defn ${1:name} "${2:doc-string}" [${3:arg-list}]
-	  ${4})
+	(defn ${1:name} [${2:arg-list}]
+	  ${3})
 snippet defp
 	(defprotocol ${1:name}
 	  ${2})
