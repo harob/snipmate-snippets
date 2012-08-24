@@ -1,3 +1,15 @@
+# Harry custom snippets
+snippet pry
+	require "pry"; binding.pry
+snippet p
+	puts "***** ${1:object} : #{$1.inspect}"
+snippet ep
+	STDERR.puts "***** ${1:object} : #{$1.inspect}"
+snippet todo
+	# TODO(harry) 
+snippet note
+	# NOTE(harry) 
+
 ########################################
 # Ruby snippets - for Rails, see below #
 ########################################
